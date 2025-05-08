@@ -111,11 +111,11 @@ function mousePressed() {
       pick = myPicker.color();
       // Remove elements so they not visible when the spirals spin.
 
-      localStorage.setItem("sld1", sld1);
-      localStorage.setItem("sld2", sld2);
-      localStorage.setItem("sld3", sld3);
-      localStorage.setItem("sld4", sld4);
-      localStorage.setItem("pick", pick);
+      localStorage.setItem("sld1", sld1.toString());
+      localStorage.setItem("sld2", sld2.toString());
+      localStorage.setItem("sld3", sld3.toString());
+      localStorage.setItem("sld4", sld4.toString());
+      localStorage.setItem("pick", pick.toString()); // Convert color to string
 
       removeElements();
     }
